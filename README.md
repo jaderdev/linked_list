@@ -2,7 +2,7 @@
 
 Implementação simples de lista lincada em Ruby com Rspec, Rubocop e SimpleCov
 
-## Installation
+## Instalação
 
 Use o gerenciador de pacotes [bundle](https://bundler.io/) para instalar as dependências.
 
