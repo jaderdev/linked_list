@@ -4,7 +4,6 @@ require './app/node'
 
 # Implementação de lista ligada
 class LinkedList
-
   attr_reader :head
 
   def initialize
