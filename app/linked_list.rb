@@ -1,10 +1,12 @@
 # frozen_string_literal: true
 
 require './app/node'
-require 'time'
 
 # Implementação de lista ligada
 class LinkedList
+
+  attr_reader :head
+
   def initialize
     @head = nil
   end
@@ -27,7 +29,9 @@ class LinkedList
     node = @head
     return node unless node.next
 
-    return node unless node.next while (node = node.next)
+    while (node = node.next)
+      return node unless node.next
+    end
   end
 
   def print
@@ -39,7 +43,8 @@ class LinkedList
   end
 
   def reverse
-    false unless @head
+    return false unless @head
+
     current = @head
     prev = nil
     until current.nil?
@@ -63,15 +68,13 @@ class LinkedList
   end
 
   def size
-    if empty?
-      count = 0
-    else
-      count = 1
-      current_node = @head
-      until current_node.next.nil?
-        current_node = current_node.next
-        count += 1
-      end
+    return 0 if empty?
+
+    count = 1
+    current_node = @head
+    until current_node.next.nil?
+      current_node = current_node.next
+      count += 1
     end
     count
   end

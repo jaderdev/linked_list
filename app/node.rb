@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Implementação do nó basico da lista linkada
 class Node
   attr_accessor :next
   attr_reader   :value
@@ -8,6 +11,6 @@ class Node
   end
 
   def to_s
-    "#{@value}"
+    @value.to_s
   end
 end
