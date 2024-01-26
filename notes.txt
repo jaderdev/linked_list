@@ -1,0 +1,35 @@
+# inicial = ["Oi",5,Time.parse("1/1/2005 14:00:00"),1.5,"Tchau"]
+# final = []
+
+# list = LinkedList.new
+
+# inicial.each do |item| list.append(item) end
+
+# list.print
+
+# list.reverse
+
+# puts "\n--------------\n\n"
+
+# list.print
+
+# item = list.shift
+
+# while(item)
+#   final.push(item.value)
+#   item = list.shift
+# end
+
+# puts "\nArgumentos iniciais"
+# p inicial.join(",")
+# puts "\nLista Inversa"
+# p final.join(",") 
+# puts "\n"
+
+# p "baseada na comparação da lista final com a lista inicial invertida"
+# p "concluímos que:"
+# if(final == inicial.reverse)
+#   p "As listas são inversamente Iguais"
+# else
+#   p "As listas não são inversamente Iguais"
+# end
